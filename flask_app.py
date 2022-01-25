@@ -103,8 +103,6 @@ def decrypt_ECC(encryptedMsg, privKey):
 privKey = secrets.randbelow(curve.field.n)
 pubKey = privKey * curve.g
 
-data = []
-
 @app.route("/", methods=["GET", "POST"])
 def index():
 
